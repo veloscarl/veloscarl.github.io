@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #211106;
+            margin: 0;
+        }
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            margin-top: -20px; /* Move the picture up */
+            position: relative; /* Allows for top, left, right, bottom adjustments */
+            top: 20px; /* Move the picture down */
+            left: 50px; /* Move the picture to the right */
+            transform: translate(-10px, -20px); /* Fine-tune the position */
+        }
+        .profile-text {
+            color: #773210; /* Brown color */
+            font-size: 60px;
+            font-weight: bold;
+            position: relative;
+            left: 50px;
+            margin-top: 0; /* Adjust to move text closer to the picture */
+        }
+        .profile-text-large {
+            color: #f7f7f7; 
+            font-size: 50px;
+            font-weight: bold;
+            position: relative;
+            left: -10px;
+            margin-top: 0; 
+        }
+        .footer-text {
+            position: absolute;
+            bottom: 20px;
+            left: 47.9%;
+            transform: translateX(-50%);
+            text-align: center;
+            color: #fdfdfd; 
+            font-size: 12px;
+            font-weight: bold;
+            font-family: 'Arial', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
+        <div class="profile-text">I'am </div>
+        <div class="profile-text profile-text-large">Carl Michael</div>
+    </div>
+    <a href="my work.html"class="footer-text">My work</a>
+   
+</body>
+</html>

@@ -7,60 +7,195 @@
     <style>
         body {
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
-            background-color: #211106;
+            background-color: #fffdfb;
             margin: 0;
+            color: #f7f7f7;
+            font-family: 'Arial', sans-serif;
+        }
+        .profile-container {
+            text-align: center;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
         }
         .profile-picture {
-            width: 150px;
-            height: 150px;
+            width: 223px;
+            height: 206px;
             border-radius: 50%;
             object-fit: cover;
             margin-bottom: 10px;
-            margin-top: -20px; /* Move the picture up */
-            position: relative; /* Allows for top, left, right, bottom adjustments */
-            top: 20px; /* Move the picture down */
-            left: 50px; /* Move the picture to the right */
-            transform: translate(-10px, -20px); /* Fine-tune the position */
         }
         .profile-text {
-            color: #773210; /* Brown color */
-            font-size: 60px;
+            color: #773210; 
+            font-size: 106.58px;
             font-weight: bold;
-            position: relative;
-            left: 50px;
-            margin-top: 0; /* Adjust to move text closer to the picture */
         }
         .profile-text-large {
             color: #f7f7f7; 
-            font-size: 50px;
+            font-size: 106.58px;
             font-weight: bold;
-            position: relative;
-            left: -10px;
-            margin-top: 0; 
         }
-        .footer-text {
+        .section {
+            width: 1280px;
+            height: 720px;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #211106;
+            border-radius: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+        }
+        .section-title {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .textbox {
             position: absolute;
-            bottom: 20px;
-            left: 47.9%;
+            left: 470px;
+            top: 248px;
+            width: 377px;
+            height: 270px;
+            border: 1px solid #211106;
+            padding: 10px;
+            box-sizing: border-box;
+            font-weight: bold;
+            font-size: 12px;
+        }
+        
+        .footer {
+            position: absolute;
+            bottom: 90px;
+            left: 50%;
             transform: translateX(-50%);
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             text-align: center;
-            color: #fdfdfd; 
+            font-size: 14px;
+            font-weight: bold;
+            color:#773210;
+        }
+
+        .footer-email {
+            position: absolute;
+            bottom: 50px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 12px;
+            font-weight: normal;
+            font-weight: bold;
+            font-size: 10px;
+            
+        }
+
+        nav {
+            position: absolute;
+            right: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        nav a {
+            color: #f7f7f7;
+            text-decoration: none;
+            margin: 10px 0;
             font-size: 12px;
             font-weight: bold;
-            font-family: 'Arial', sans-serif;
+        }
+        .right-side {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+        .my-works-link {
+            position: absolute;
+            bottom: 20px;
+            color: #f7f7f7;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        @media (max-width: 768px) {
+            .profile-text {
+                font-size: 40px;
+            }
+            .profile-text-large {
+                font-size: 30px;
+            }
+            .section {
+                width: 90%;
+            }
         }
     </style>
 </head>
 <body>
-    <div class="profile-container">
-        <img src="profile.jpg" alt="Profile Picture" class="profile-picture">
-        <div class="profile-text">I'am </div>
-        <div class="profile-text profile-text-large">Carl Michael</div>
-    </div>
-    <a href="my work.html"class="footer-text">My work</a>
-   
+    <main>
+        <div id="home" class="section">
+            <div class="profile-container">
+                <img src="profile.jpg" alt="Profile Picture of Carl Michael" class="profile-picture">
+                <div class="profile-text">I'am </div>
+                <div class="profile-text profile-text-large">Carl Michael</div>
+                <a href="#works" class="my-works-link">My Works</a>
+            </div>
+        </div>
+        <div class="right-side">
+            <div id="works" class="section">
+                <div class="section-title">Works</div>
+                <nav>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                    <a href="#works">Works</a>
+                    <a href="#home">Home</a>
+                </nav>
+                <p></p>
+            </div>
+            <div id="about" class="section">
+                <div class="section-title">About</div>
+                <nav>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                    <a href="#works">Works</a>
+                    <a href="#home">Home</a>
+                </nav>
+                <div class="textbox">       
+Hello! I’m Carl Michael, a dedicated and passionate professional with a strong foundation in Web Development: HTML, CSS and JavaScript, Graphic Design: Adobe Photoshop, Illustrator, InDesign and Figma.<b></b> I have honed my skills through hands-on projects and self-directed learning, and I am eager to apply my knowledge in a professional setting.
+
+I am particularly interested in Web Development,User Interface (UI) Design and Graphic Design and I am committed to continuously learning and growing in this field. <b></b>My goal is to contribute to innovative projects and collaborate with talented professionals to make a meaningful impact.
+                </div>
+                <div class="footer">
+                    <a href="#contact">Contact Me </a>
+                </div>
+                <div class="footer-email">
+                    veloscarlmichael@gmail.com
+                </div>
+            </div>
+            <div id="contact" class="section">
+                <div class="section-title">Contact</div>
+                <nav>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                    <a href="#works">Works</a>
+                    <a href="#home">Home</a>
+                </nav>
+                <p></p>
+            </div>
+        </div>
+    </main>
 </body>
 </html>
+

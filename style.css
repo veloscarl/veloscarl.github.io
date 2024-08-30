@@ -1,0 +1,127 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fffdfb;
+    margin: 0;
+    color: #f7f7f7;
+    font-family: 'Arial', sans-serif;
+}
+.section {
+    text-align: center;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+.profile-picture {
+    width: 223px;
+    height: 206px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 100px;
+}
+
+.profile-text {
+    color: #773210; 
+    font-size: 106.58px;
+    font-weight: bold;
+}
+
+.profile-text-large {
+    color: #f7f7f7; 
+    font-size: 106.58px;
+    font-weight: bold;
+}
+.section.hidden {
+    opacity: 0;
+    transform: translateY(-20px);
+}
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.textbox {
+    position: absolute;
+    left: 470px;
+    top: 248px;
+    width: 377px;
+    height: 270px;
+    border: 1px solid #211106;
+    padding: 10px;
+    box-sizing: border-box;
+    font-weight: bold;
+    font-size: 12px;
+}
+.footer {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #773210;
+}
+.footer-email {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 12px;
+    font-weight: normal;
+}
+nav {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column-reverse;
+}
+nav a {
+    color: #f7f7f7;
+    text-decoration: none;
+    margin: 10px 0;
+    font-size: 12px;
+    font-weight: bold;
+}
+.my-works-link {
+    position: absolute;
+    bottom: 20px;
+    color: #f7f7f7;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+.section {
+    width: 1280px;
+    height: 720px;
+    margin: 20px ;
+    background-color: #211106;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative;
+    opacity: 2;
+    transform: translateY(20px);
+    transition: opacity 300ms ease-out, transform 300ms
+}
+.section.visible {
+    opacity: 2;
+    transform: translateY(0);
+}
+#home { background: #211106; }
+#works { background: #211106; }
+#about { background: #211106; }
+#contact { background: #211106; }

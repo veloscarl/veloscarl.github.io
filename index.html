@@ -4,222 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
-    <style>
-        body {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            background-color: #fffdfb;
-            margin: 0;
-            color: #f7f7f7;
-            font-family: 'Arial', sans-serif;
-        }
-        .profile-container {
-            text-align: center;
-            margin-top: 20px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            position: relative;
-        }
-        .profile-picture {
-            width: 223px;
-            height: 206px;
-            border-radius: 50%;
-            object-fit: cover;
-            margin-bottom: 10px;
-        }
-        .profile-text {
-            color: #773210; 
-            font-size: 106.58px;
-            font-weight: bold;
-        }
-        .profile-text-large {
-            color: #f7f7f7; 
-            font-size: 106.58px;
-            font-weight: bold;
-        }
-        .section {
-            width: 1280px;
-            height: 720px;
-            margin: 20px 0;
-            padding: 20px;
-            background-color: #211106;
-            border-radius: 10px;
-            box-sizing: border-box;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: flex-start;
-            position: relative;
-        }
-        .section-title {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .textbox {
-            position: absolute;
-            left: 470px;
-            top: 248px;
-            width: 377px;
-            height: 270px;
-            border: 1px solid #211106;
-            padding: 10px;
-            box-sizing: border-box;
-            font-weight: bold;
-            font-size: 12px;
-        }
-        
-        .footer {
-            position: absolute;
-            bottom: 90px;
-            left: 50%;
-            transform: translateX(-50%);
-            background-color: white;
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            font-size: 14px;
-            font-weight: bold;
-            color:#773210;
-        }
-
-        .footer-email {
-            position: absolute;
-            bottom: 50px;
-            left: 50%;
-            transform: translateX(-50%);
-            font-size: 12px;
-            font-weight: normal;
-            font-weight: bold;
-            font-size: 10px;
-            
-        }
-
-        nav {
-            position: absolute;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            display: flex;
-            flex-direction: column-reverse;
-        }
-        nav a {
-            color: #f7f7f7;
-            text-decoration: none;
-            margin: 10px 0;
-            font-size: 12px;
-            font-weight: bold;
-        }
-        .right-side {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 100%;
-        }
-        .my-works-link {
-            position: absolute;
-            bottom: 20px;
-            color: #f7f7f7;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-        }
-        @media (max-width: 768px) {
-            .profile-text {
-                font-size: 40px;
-            }
-            .profile-text-large {
-                font-size: 30px;
-            }
-            .section {
-                width: 90%;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
     <main>
         <div id="home" class="section">
-            <div class="profile-container">
+            <div class="section">
                 <img src="profile.jpg" alt="Profile Picture of Carl Michael" class="profile-picture">
                 <div class="profile-text">I'am </div>
-                <div class="profile-text profile-text-large">Carl Michael</div>
-                <a href="#works" class="my-works-link">My Works</a>
+                <div class=" profile-text-large">Carl Michael</div>
+                <nav>
+                    <a href="#contact">Contact</a>
+                    <a href="#about">About</a>
+                    <a href="#works">Works</a>
+                    <a href="#home">Home</a>
+                </nav>
             </div>
         </div>
-             <div id="works" class="section">
-                <div class="section-title">Works</div>
-                <nav>
-                    <a href="#contact">Contact</a>
-                    <a href="#about">About</a>
-                    <a href="#works">Works</a>
-                    <a href="#home">Home</a>
-                </nav>
-                <div style="display: flex; justify-content: space-between; align-items: center;">
-                    <div style=" padding: 20px; margin-top: 30px;">
-                        <p style="font-size: 36px; font-weight: bold; text-align: center;">CANVA EDITOR</p>
-                        <img src="project1.jpg" alt="Instagram" style="width: 407px; height: 219px; margin-top: 10px;">
-                    </div>
-                    <div style="padding: 20px; margin-top: 30px;">
-                        <p style="font-size: 36px; font-weight: bold; text-align: center;">ECOMMERCE WEBSITE</p>
-                        <img src="project2.png" alt="Facebook" style="width: 407px; height: 219px; margin-top: 10px;">
-                    </div>
+        <div id="works" class="section">
+            <div class="section-title">Works</div>
+            <nav>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="#works">Works</a>
+                <a href="#home">Home</a>
+            </nav>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <div style="padding: 20px; margin-top: 30px;">
+                    <p style="font-size: 36px; font-weight: bold; text-align: center;">CANVA EDITOR</p>
+                    <img src="project1.jpg" alt="Instagram" style="width: 407px; height: 219px; margin-top: 10px;">
                 </div>
-                  </div>
+                <div style="padding: 20px; margin-top: 30px;">
+                    <p style="font-size: 36px; font-weight: bold; text-align: center;">ECOMMERCE WEBSITE</p>
+                    <img src="project2.png" alt="Facebook" style="width: 407px; height: 219px; margin-top: 10px;">
+                </div>
             </div>
-            <div id="about" class="section">
-                <div class="section-title">About</div>
-                <nav>
-                    <a href="#contact">Contact</a>
-                    <a href="#about">About</a>
-                    <a href="#works">Works</a>
-                    <a href="#home">Home</a>
-                </nav>
-                <div class="textbox">       
-Hello! I’m Carl Michael, a dedicated and passionate professional with a strong foundation in Web Development: HTML, CSS and JavaScript, Graphic Design: Adobe Photoshop, Illustrator, InDesign and Figma.<b></b> I have honed my skills through hands-on projects and self-directed learning, and I am eager to apply my knowledge in a professional setting.
+        </div>
+        <div id="about" class="section">
+            <div class="section-title">About</div>
+            <nav>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="#works">Works</a>
+                <a href="#home">Home</a>
+            </nav>
+            <div class="textbox">
+                Hello! I’m Carl Michael, a dedicated and passionate professional with a strong foundation in Web Development: HTML, CSS and JavaScript, Graphic Design: Adobe Photoshop, Illustrator, InDesign and Figma.<b></b> I have honed my skills through hands-on projects and self-directed learning, and I am eager to apply my knowledge in a professional setting.
 
-I am particularly interested in Web Development,User Interface (UI) Design and Graphic Design and I am committed to continuously learning and growing in this field. <b></b>My goal is to contribute to innovative projects and collaborate with talented professionals to make a meaningful impact.
-                </div>
-                <div class="footer">
-                    <a href="#contact">Contact Me </a>
-                </div>
-                <div class="footer-email">
-                    veloscarlmichael@gmail.com
-                </div>
+                I am particularly interested in Web Development, User Interface (UI) Design and Graphic Design and I am committed to continuously learning and growing in this field. <b></b>My goal is to contribute to innovative projects and collaborate with talented professionals to make a meaningful impact.
             </div>
-            <div id="contact" class="section">
-                <div class="section-title" style="font-size: 48px; font-weight: bold; margin-top: 20px;">Say Hello!</div>
-                <nav>
-                    <a href="#contact">Contact</a>
-                    <a href="#about">About</a>
-                    <a href="#works">Works</a>
-                    <a href="#home">Home</a>
-                </nav>
-                <p style="font-size: 24px; font-weight: bold; color: #773210; margin-top: 30px; margin-left: -250px;">Write an Email</p>
-               <input type="text" style="margin-right: -300px; padding: 10px;  margin-top: -60px; font-size: 16px; color: #211106; border-radius: 15px; width: 223px; height: 17px;" placeholder="type a message">
-        <input type="text" style="margin-right: -45px; width: 419px; height: 36px; margin-top: 60px; font-size: 10px; color: #211106; border-radius: 15px; width: 419px; height: 36px;" placeholder="ENTER YOUR NAME*">
-        <input type="text" style="margin-right: -45px; width: 419px; height: 36px; margin-top: 65px; font-size: 10px; color: #211106; border-radius: 15px; width: 419px; height: 36px;" placeholder="ENTER YOUR EMAIL*">
-        <input type="text" style="margin-right: -45px; width: 419px; height: 36px; margin-top: 70px; font-size: 10px; color: #211106; border-radius: 15px; width: 419px; height: 36px;" placeholder="PASSWORD">
-        <p style="font-size: 16px; font-weight: bold; color: #f8f7f7; margin-bottom: 30px; margin-right: -10px;  padding: 40px; ">SUBMIT</p>
-        <div style=" margin-bottom: 30px; margin-right: -10px;">
-            <a href="https://www.facebook.com/vlscrlmchl?mibextid=ZbWKwL" target="_blank">
-                <img src="fb.jfif" alt="Facebook" style="margin-right: 10px; width: 48px; height: 48px; border-radius: 15px;">
-            </a>
-            <a href="https://www.instagram.com/crlm_vls24?igsh=aTA3djBwNmo5bWZj" target="_blank">
-                <img src="ig.jfif" alt="Instagram" style="margin-right: 10px; width: 48px; height: 48px; border-radius: 15px;">
-            </a>
-            <a href="mailto:veloscarlmichael@gmail.com">
-                <img src="mail.jfif" alt="Email" style="width: 48px; height: 48px; border-radius: 15px;">
-            </a>
-        </div>
+            <div class="footer">
+                <a href="#contact">Contact Me</a>
+            </div>
+            <div class="footer-email">
+                veloscarlmichael@gmail.com
             </div>
         </div>
-    </main>
+        <div id="contact" class="section">
+            <div class="section-title" style="font-size: 48px; font-weight: bold; margin-top: 20px;">Say Hello!</div>
+            <nav>
+                <a href="#contact">Contact</a>
+                <a href="#about">About</a>
+                <a href="#works">Works</a>
+                <a href="#home">Home</a>
+            </nav>
+            <p style="font-size: 24px; font-weight: bold; color: #773210; margin-top: 30px; margin-left: -250px;">Write an Email</p>
+            <input type="text" style="margin-right: -300px; padding: 10px; margin-top: -60px; font-size: 16px; color: #211106; border-radius: 15px; width: 223px; height: 17px;" placeholder="type a message">
+            <input type="text" style="margin-right: -45px; width: 419px; height: 36px; margin-top: 60px; font-size: 10px; color: #211106; border-radius: 15px; width: 419px; height: 36px;" placeholder="ENTER YOUR NAME*">
+            <input type="text" style="margin-right: -45px; width: 419px; height: 36px; margin-top: 65px; font-size: 10px; color: #211106; border-radius: 15px; width: 419px; height: 36px;" placeholder="ENTER YOUR EMAIL*">
+            <input type="password" style="margin-right: -45px; width: 419px; height: 36px; margin-top: 70px; font-size: 10px; color: #211106; border-radius: 15px; width: 419px; height: 36px;" placeholder="PASSWORD">
+            <a href="mailto:your@email.com">
+                <p style="font-size: 16px; font-weight: bold; color: #f8f7f7; margin-bottom: 30px; margin-right: -10px; padding: 40px;">SUBMIT</p>
+            </a>
+            <div style="margin-bottom: 30px; margin-right: -10px;">
+                <a href="https://www.facebook.com/vlscrlmchl?mibextid=ZbWKwL" target="_blank">
+                    <img src="fb.jfif" alt="Facebook" style="margin-right: 10px; width: 48px; height: 48px; border-radius: 15px;">
+                </a>
+                <a href="https://www.instagram.com/crlm_vls24?igsh=aTA3djBwNmo5bWZj" target="_blank">
+                    <img src="ig.jfif" alt="Instagram" style="margin-right: 10px; width: 48px; height: 48px; border-radius: 15px;">
+                </a>
+                <a href="mailto:veloscarlmichael@gmail.com">
+                    <img src="mail.jfif" alt="Email" style="width: 48px; height: 48px; border-radius: 15px;">
+                </a>
+            </div>
+        </div>
+    </main> 
 </body>
 </html>

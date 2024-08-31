@@ -1,22 +1,22 @@
 body {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #fffdfb;
-    margin: 0;
-    color: #f7f7f7;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
     font-family: 'Arial', sans-serif;
 }
 .section {
-    text-align: center;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    box-sizing: border-box;
 }
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color:#f7f7f7
+}
+
 .profile-picture {
     width: 223px;
     height: 206px;
@@ -35,19 +35,31 @@ body {
     color: #f7f7f7; 
     font-size: 106.58px;
     font-weight: bold;
+
 }
-.section.hidden {
-    opacity: 0;
-    transform: translateY(-20px);
+
+.fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #211106;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000;
 }
-.section-title {
-    font-size: 36px;
+    
+.fixed-nav a {
+    color: #f7f7f7;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 14px;
     font-weight: bold;
-    margin-bottom: 20px;
 }
+
+
 .textbox {
     position: absolute;
-    left: 470px;
+    left: 420px;
     top: 248px;
     width: 377px;
     height: 270px;
@@ -56,6 +68,7 @@ body {
     box-sizing: border-box;
     font-weight: bold;
     font-size: 12px;
+    color: #f7f7f7;
 }
 .footer {
     position: absolute;
@@ -78,34 +91,13 @@ body {
     transform: translateX(-50%);
     font-size: 12px;
     font-weight: normal;
-}
-nav {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column-reverse;
-}
-nav a {
     color: #f7f7f7;
-    text-decoration: none;
-    margin: 10px 0;
-    font-size: 12px;
-    font-weight: bold;
-}
-.my-works-link {
-    position: absolute;
-    bottom: 20px;
-    color: #f7f7f7;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+
 }
 .section {
     width: 1280px;
     height: 720px;
-    margin: 20px ;
+    margin: 50px ;
     background-color: #211106;
     box-sizing: border-box;
     display: flex;
@@ -115,7 +107,7 @@ nav a {
     position: relative;
     opacity: 2;
     transform: translateY(20px);
-    transition: opacity 300ms ease-out, transform 300ms
+    transition: opacity 1s ease-out, transform 1s
 }
 .section.visible {
     opacity: 2;

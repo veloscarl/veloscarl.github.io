@@ -1,3 +1,4 @@
+html:
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,30 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Profile Page</title>
     <link rel="stylesheet" href="style.css"> 
+    <script src="script.js"></script>
 </head>
 <body>
     <main>
+        <header>
+            <nav class="fixed-nav">
+                <a href="#home">Home</a>
+                <a href="#works">Works</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
         <div id="home" class="section">
             <div class="section">
                 <img src="profile.jpg" alt="Profile Picture of Carl Michael" class="profile-picture">
                 <div class="profile-text">I'am </div>
                 <div class=" profile-text-large">Carl Michael</div>
-                <nav>
-                    <a href="#contact">Contact</a>
-                    <a href="#about">About</a>
-                    <a href="#works">Works</a>
-                    <a href="#home">Home</a>
-                </nav>
             </div>
         </div>
         <div id="works" class="section">
             <div class="section-title">Works</div>
-            <nav>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
-                <a href="#works">Works</a>
-                <a href="#home">Home</a>
-            </nav>
             <div style="display: flex; justify-content: space-between; align-items: center;">
                 <div style="padding: 20px; margin-top: 30px;">
                     <p style="font-size: 36px; font-weight: bold; text-align: center;">CANVA EDITOR</p>
@@ -42,12 +40,6 @@
         </div>
         <div id="about" class="section">
             <div class="section-title">About</div>
-            <nav>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
-                <a href="#works">Works</a>
-                <a href="#home">Home</a>
-            </nav>
             <div class="textbox">
                 Hello! I’m Carl Michael, a dedicated and passionate professional with a strong foundation in Web Development: HTML, CSS and JavaScript, Graphic Design: Adobe Photoshop, Illustrator, InDesign and Figma.<b></b> I have honed my skills through hands-on projects and self-directed learning, and I am eager to apply my knowledge in a professional setting.
 
@@ -62,12 +54,6 @@
         </div>
         <div id="contact" class="section">
             <div class="section-title" style="font-size: 48px; font-weight: bold; margin-top: 20px;">Say Hello!</div>
-            <nav>
-                <a href="#contact">Contact</a>
-                <a href="#about">About</a>
-                <a href="#works">Works</a>
-                <a href="#home">Home</a>
-            </nav>
             <p style="font-size: 24px; font-weight: bold; color: #773210; margin-top: 30px; margin-left: -250px;">Write an Email</p>
             <input type="text" style="margin-right: -300px; padding: 10px; margin-top: -60px; font-size: 16px; color: #211106; border-radius: 15px; width: 223px; height: 17px;" placeholder="type a message">
             <input type="text" style="margin-right: -45px; width: 419px; height: 36px; margin-top: 60px; font-size: 10px; color: #211106; border-radius: 15px; width: 419px; height: 36px;" placeholder="ENTER YOUR NAME*">
